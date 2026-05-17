@@ -294,10 +294,10 @@ footer a { color: #C41E3A; text-decoration: none; }
   <div class="header-title">🦞 <span>China Meme</span> Dictionary</div>
   <div class="header-sub">Understand trending Chinese internet slang — with translations</div>
   <div class="lang-bar">
-    <button class="lang-btn active" data-lang="en">🇬🇧 English</button>
-    <button class="lang-btn" data-lang="ja">🇯🇵 日本語</button>
-    <button class="lang-btn" data-lang="ko">🇰🇷 한국어</button>
-    <button class="lang-btn" data-lang="fr">🇫🇷 Français</button>
+    <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">🇬🇧 English</button>
+    <button class="lang-btn" data-lang="ja" onclick="switchLang('ja')">🇯🇵 日本語</button>
+    <button class="lang-btn" data-lang="ko" onclick="switchLang('ko')">🇰🇷 한국어</button>
+    <button class="lang-btn" data-lang="fr" onclick="switchLang('fr')">🇫🇷 Français</button>
   </div>
 </header>
 
@@ -547,16 +547,14 @@ async function loadData() {
 }
 
 /* ============================================
-   LANGUAGE SWITCHING
+   LANGUAGE SWITCHING (using onclick for reliability)
    ============================================ */
-langBtns.forEach(btn => {
-  btn.addEventListener('click', () => {
-    langBtns.forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-    currentLang = btn.dataset.lang;
-    render();
-  });
-});
+function switchLang(lang) {
+  langBtns.forEach(b => b.classList.remove('active'));
+  document.querySelector(`.lang-btn[data-lang="${lang}"]`).classList.add('active');
+  currentLang = lang;
+  render();
+}
 
 /* ============================================
    SEARCH
