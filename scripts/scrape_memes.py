@@ -523,34 +523,26 @@ def main():
     print(f"Date: {datetime.now(timezone.utc).astimezone().strftime('%Y-%m-%d %H:%M')}")
     print("=" * 50)
 
-    # 1. Process user-submitted suggestions from GitHub Issues
-    issue_terms = []
+    # 2. Process user-submitted suggestions from GitHub Issues
     open_issues = fetch_suggestion_issues()
+    user_suggested = []
     for issue in open_issues:
         term = extract_term_from_issue(issue)
-        if term:
-            issue_terms.append({'term': term, 'issue_number': issue['number']})
-            print(f"  Issue #{issue['number']}: Suggest '{term}'")
-
-    # 2. Load existing data
-    classics, old_trending, existing_map = load_existing_data()
-    existing_ids = set(m['id'] for m in classics + old_trending if 'id' in m)
-
-    # 3. Process suggested terms (add them if not already in DB)
-    if issue_terms:
-        print("\n  Processing user suggestions from issues...")
-    for item in issue_terms:
-        term = item['term']
-        if term in existing_map or any(t['chinese'] == term for t in locals().get('processed_suggestions', [])):
-            print(f"    Skipping {term} (already in database)")
-            close_issue(item['issue_number'])
+        if not term:
             continue
-        meme = build_new_meme(term, 'user-suggestion', today)
-        # We'll add these to trending later via the normal flow
-        # For now, just note them
-        print(f"    + Suggested: {term} (will be added to trending)")
+        issue_num = issue['number']
+        print(f"  Issue #{issue_num}: Suggest '{term}'")
+        if term in existing_map:
+            print(f"    Already in DB, closing issue #{issue_num}")
+            close_issue(issue_num)
+            continue
+        if term in HISTORICAL_MAP:
+            print(f"    In history archive. Closing #{issue_num}")
+            close_issue(issue_num)
+            continue
+        user_suggested.append({'term': term, 'issue_number': issue_num})
 
-    # 4. Scrape all sources
+    # 3. Scrape all sources for current trending
     all_raw = []
     for src in SOURCES:
         terms = fetch_source(src)
@@ -574,14 +566,22 @@ def main():
     # 5. Take top 10 from live scrape
     live_trending = filtered[:10]
 
-    # 6. Fallback: if live scraping produced < 5 memes, supplement with historical archive
-    today = datetime.now(timezone.utc).astimezone().strftime('%Y-%m-%d')
-    MIN_MEMES = 5
+    # 6. 🔥 FALLBACK LOGIC
     TARGET_COUNT = 8
     new_trending = []
 
-    # 6a. Process live-scraped terms first
+    # 6a. Add user-suggested terms first
+    for item in user_suggested:
+        meme = build_new_meme(item['term'], 'user-suggestion', today)
+        new_trending.append(meme)
+        existing_map[meme['chinese']] = meme
+        print(f"  User suggestion: {item['term']}")
+        close_issue(item['issue_number'])
+
+    # 6b. Add live-scraped terms
     for ft in live_trending:
+        if len(new_trending) >= TARGET_COUNT:
+            break
         if ft['chinese'] in existing_map and existing_map[ft['chinese']].get('is_trending'):
             existing = existing_map[ft['chinese']]
             existing['date'] = today
@@ -592,37 +592,33 @@ def main():
             new_trending.append(meme)
             print(f"  New trending: {ft['chinese']}")
 
-    # 6b. Supplement with historical memes if needed
+    # 6c. Preserve old trending if live scrape found nothing fresh
+    if len(new_trending) == 0 and old_trending:
+        print(f"  No new trending found. Preserving {len(old_trending)} existing trending entries.")
+        for m in old_trending:
+            m['date'] = m.get('date', today)
+            new_trending.append(m)
+
+    # 6d. Supplement with historical archive if still below target
     if len(new_trending) < TARGET_COUNT:
         need = TARGET_COUNT - len(new_trending)
-        print(f"\n  Only found {len(new_trending)} trending memes from live scraping.")
-        print(f"  Supplementing with {need} historical memes from archive...")
-
-        # Collect historical memes not already in the dataset
-        historical_candidates = []
+        print(f"  Supplementing with {need} from history archive...")
         for h in HISTORICAL_MEMES:
-            chinese = h[0]
-            if chinese not in existing_map and chinese not in {m['chinese'] for m in new_trending}:
-                historical_candidates.append(h)
-
-        # Remove entries where chinese is already in the final list to avoid duplicates
-        added = 0
-        for h in historical_candidates:
-            if added >= need:
+            if need <= 0:
                 break
+            chinese = h[0]
+            if chinese in existing_map or any(m['chinese'] == chinese for m in new_trending):
+                continue
             chinese, pinyin, en, ja, ko, fr, zh, period_label, source = h
             meme = {
-                'chinese': chinese,
-                'pinyin': pinyin,
+                'chinese': chinese, 'pinyin': pinyin,
                 'explanations': {'en': en, 'ja': ja, 'ko': ko, 'fr': fr, 'zh': zh},
-                'source': source,
-                'date': period_label,  # Use historical period as date (e.g., "2021-06")
+                'source': source, 'date': period_label,
                 'is_trending': True,
-                '_historical': True,  # Internal flag
             }
             new_trending.append(meme)
-            print(f"  + Historical ({period_label}): {chinese}")
-            added += 1
+            print(f"  + History ({period_label}): {chinese}")
+            need -= 1
 
     # 7. Assign IDs to entries without one
     new_trending = assign_ids(new_trending, existing_ids)
