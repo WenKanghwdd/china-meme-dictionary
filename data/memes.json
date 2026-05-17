@@ -1,0 +1,282 @@
+[
+  {
+    "id": 1,
+    "chinese": "内卷",
+    "pinyin": "nèi juǎn",
+    "explanations": {
+      "en": "Involution — fierce, counterproductive competition where everyone works harder but nobody gets ahead. A buzzword for the exhausting rat race in Chinese society.",
+      "ja": "インボリューション — 過度な競争により誰も得をしない状態。中国社会の疲弊する競争社会を表す流行語。",
+      "ko": "인볼루션 — 모두가 더 열심히 일하지만 아무도 앞서 나가지 못하는 과도한 경쟁. 중국 사회의 지친 경쟁을 나타내는 신조어.",
+      "fr": "Involution — compétition épuisante où tout le monde travaille plus sans aucun bénéfice. Représente la course effrénée dans la société chinoise."
+    },
+    "source": "classic",
+    "date": "2024-01-15",
+    "is_trending": false
+  },
+  {
+    "id": 2,
+    "chinese": "躺平",
+    "pinyin": "tǎng píng",
+    "explanations": {
+      "en": "Lying Flat — a lifestyle choice to reject the rat race, stop chasing wealth and status, and live a simple, low-effort life.",
+      "ja": "寝そべり — 競争社会から降り、シンプルで負担のない生活を選ぶ生き方。",
+      "ko": "눕다 — 경쟁 사회에서 내려와 단순하고 스트레스 없는 삶을 선택하는 라이프스타일.",
+      "fr": "S'allonger — choix de vie consistant à rejeter la course effrénée et à mener une vie simple et sans pression."
+    },
+    "source": "classic",
+    "date": "2024-01-15",
+    "is_trending": false
+  },
+  {
+    "id": 3,
+    "chinese": "芭比Q了",
+    "pinyin": "bā bǐ Q le",
+    "explanations": {
+      "en": "Barbecue'd — slang for 'it's all over', 'everything is ruined'. Derived from the English 'barbecue' pronounced in a funny Chinese way, popularized by a gaming streamer.",
+      "ja": "バーベキューだ — 「終わった」「台無しだ」の意味。ゲーム配信者が広めた中国語風の発音から。",
+      "ko": "바베큐 됐다 — '망했다', '끝장났다'는 뜻. 게임 스트리머가 유행시킨 중국식 영어 발음에서 유래.",
+      "fr": "C'est cuit — 'tout est foutu'. Calque humoristique de 'barbecue' prononcé à la chinoise, popularisé par un streameur."
+    },
+    "source": "classic",
+    "date": "2024-02-10",
+    "is_trending": false
+  },
+  {
+    "id": 4,
+    "chinese": "社恐",
+    "pinyin": "shè kǒng",
+    "explanations": {
+      "en": "Social Anxiety — abbreviation of 'social phobia' (社交恐惧症). Used to describe people who feel anxious in social situations.",
+      "ja": "社交不安 — 「社交恐惧症」の略。人との交流に不安を感じる人を指す。",
+      "ko": "사회공포증 — '사회공포증(社交恐惧症)'의 줄임말. 사회적 상황에서 불안을 느끼는 사람을 표현.",
+      "fr": "Anxiété sociale — abréviation de 'phobie sociale'. Désigne une personne qui ressent de l'anxiété en société."
+    },
+    "source": "classic",
+    "date": "2024-03-01",
+    "is_trending": false
+  },
+  {
+    "id": 5,
+    "chinese": "绝绝子",
+    "pinyin": "jué jué zǐ",
+    "explanations": {
+      "en": "Absolutely Amazing — an exaggerated way to say something is incredible, stunning, or top-tier. Often used by young women on social media.",
+      "ja": "最高すぎる — 「絶句」の強調形。特に若い女性がSNSで感動や絶賛を表現する時に使う。",
+      "ko": "완전 대박 — '기가 막히다'를 강조한 표현. 주로 젊은 여성들이 SNS에서 감탄할 때 사용.",
+      "fr": "Absolument incroyable — une façon exagérée de dire que quelque chose est époustouflant, souvent utilisé par les jeunes femmes."
+    },
+    "source": "classic",
+    "date": "2024-03-01",
+    "is_trending": false
+  },
+  {
+    "id": 6,
+    "chinese": "YYDS",
+    "pinyin": "yǒng yuǎn de shén",
+    "explanations": {
+      "en": "Eternal God / GOAT — abbreviation of 永远的神 (yǒng yuǎn de shén). Used to praise someone or something as the greatest of all time.",
+      "ja": "永遠の神 — 「永遠的神（永遠の神）」の略。誰かや何かを最高だと褒める言葉。",
+      "ko": "영원의 신 — '永遠的神(영원의 신)'의 약자. 누군가 또는 무언가를 최고라고 칭송할 때 사용.",
+      "fr": "Dieu éternel — abréviation de '永远的神'. Utilisé pour qualifier quelqu'un ou quelque chose de légendaire."
+    },
+    "source": "classic",
+    "date": "2024-03-15",
+    "is_trending": false
+  },
+  {
+    "id": 7,
+    "chinese": "破防了",
+    "pinyin": "pò fáng le",
+    "explanations": {
+      "en": "Emotional Breach — 'defenses broken'. Used when something emotionally overwhelms you — makes you cry, laugh uncontrollably, or feel deeply touched.",
+      "ja": "心がやられた — 感情の防壁が崩れること。感動で涙が出る、または強い衝撃を受けた時に使う。",
+      "ko": "멘탈 붕괴 — '방어가 뚫렸다'는 뜻. 감정적으로 압도당해 눈물이 나거나 크게 감동받았을 때 사용.",
+      "fr": "Défenses percées — quand quelque chose vous submerge émotionnellement, vous fait pleurer ou rire aux larmes."
+    },
+    "source": "classic",
+    "date": "2024-04-01",
+    "is_trending": false
+  },
+  {
+    "id": 8,
+    "chinese": "凡尔赛",
+    "pinyin": "fán ěr sài",
+    "explanations": {
+      "en": "Versailles / Humblebrag — named after the Palace of Versailles. Describes a covert boast disguised as a complaint or casual remark.",
+      "ja": "ヴェルサイユ — ヴェルサイユ宮殿にちなむ。不満や何気ない話に装った自慢話のこと。",
+      "ko": "베르사유 — 베르사유 궁전에서 유래. 불평이나 일상적인 대화로 위장한 은근한 자랑.",
+      "fr": "Versailles / Humblebrag — nommé d'après le palais de Versailles. Désigne une vantardise déguisée en plainte."
+    },
+    "source": "classic",
+    "date": "2024-04-10",
+    "is_trending": false
+  },
+  {
+    "id": 9,
+    "chinese": "emo了",
+    "pinyin": "yī mó le",
+    "explanations": {
+      "en": "Feeling Emo — borrowed from English 'emo'. Used to say you're feeling sad, melancholic, or emotionally fragile.",
+      "ja": "エモい — 英語の「emo」から。悲しい、憂鬱、感情的に脆い状態を表す。",
+      "ko": "에모다 — 영어 'emo'에서 유래. 슬프고 우울하며 감정적으로 취약한 상태를 표현.",
+      "fr": "Être emo — emprunté à l'anglais. Exprime un état de tristesse, mélancolie ou fragilité émotionnelle."
+    },
+    "source": "classic",
+    "date": "2024-04-15",
+    "is_trending": false
+  },
+  {
+    "id": 10,
+    "chinese": "栓Q",
+    "pinyin": "shuān Q",
+    "explanations": {
+      "en": "Thank You (funny version) — a humorous mispronunciation of 'thank you', popularized by a viral video. Commonly used online to say thanks in a funny way.",
+      "ja": "サンキュー（笑） — 「thank you」の面白い中国語発音。バイラル動画で流行し、ネットで冗談交じりの感謝に使われる。",
+      "ko": "감사합니다 (웃긴 버전) — 'thank you'의 웃긴 중국식 발음. 바이럴 영상으로 유행했으며, 온라인에서 재치 있게 감사 표현할 때 사용.",
+      "fr": "Merci (version drôle) — prononciation humoristique chinoise de 'thank you', popularisée par une vidéo virale."
+    },
+    "source": "classic",
+    "date": "2024-05-01",
+    "is_trending": false
+  },
+  {
+    "id": 11,
+    "chinese": "无语",
+    "pinyin": "wú yǔ",
+    "explanations": {
+      "en": "Speechless — short for 无语凝噎 (wú yǔ níng yē). Used when something is so absurd, ridiculous, or frustrating that you have no words.",
+      "ja": "言葉が出ない — 「無語凝噎」の略。あまりにばかげていたり呆れたりして言葉を失うこと。",
+      "ko": "어이없다 — '무어응어(无语凝噎)'의 줄임. 너무 황당하거나 어처구니없어 할 말을 잃은 상태.",
+      "fr": "Sans voix — abréviation de l'expression classique. Utilisé face à une situation tellement absurde qu'on ne trouve pas ses mots."
+    },
+    "source": "classic",
+    "date": "2024-05-10",
+    "is_trending": false
+  },
+  {
+    "id": 12,
+    "chinese": "显眼包",
+    "pinyin": "xiǎn yǎn bāo",
+    "explanations": {
+      "en": "Attention Seeker — literally 'conspicuous bag'. Describes someone who deliberately acts out to get attention, often in an exaggerated or cringey way.",
+      "ja": "目立ちたがり — 文字通り「目立つ袋」。派手な行動で注目を集めようとする人を指す。",
+      "ko": "관종 — 문자 그대로 '눈에 띄는 가방'. 과장된 행동으로 관심을 끌려는 사람을 가리킴.",
+      "fr": "L'accrocheur — littéralement 'sac voyant'. Personne qui fait tout pour attirer l'attention, souvent de manière exagérée."
+    },
+    "source": "classic",
+    "date": "2024-06-01",
+    "is_trending": false
+  },
+  {
+    "id": 13,
+    "chinese": "遥遥领先",
+    "pinyin": "yáo yáo lǐng xiān",
+    "explanations": {
+      "en": "Far Ahead / Leading the Pack — originally used by Huawei in product launches. Became a popular rallying cry for Chinese tech pride.",
+      "ja": "大きくリード — ファーウェイが製品発表で使用したフレーズ。中国の技術力を誇る決まり文句に。",
+      "ko": "압도적 선두 — 화웨이가 제품 발표에서 사용한 표현. 중국 기술 자부심을 나타내는 유행어.",
+      "fr": "Largement en tête — expression utilisée par Huawei lors de lancements de produits. Devenue un cri de ralliement de la tech chinoise."
+    },
+    "source": "classic",
+    "date": "2024-06-15",
+    "is_trending": false
+  },
+  {
+    "id": 14,
+    "chinese": "小土豆",
+    "pinyin": "xiǎo tǔ dòu",
+    "explanations": {
+      "en": "Little Potato — an affectionate term for tourists from southern China who visit Harbin in winter. They're bundled up and easily recognizable.",
+      "ja": "小さなジャガイモ — 冬にハルビンを訪れる南方からの観光客を親しみを込めて呼ぶ言葉。",
+      "ko": "작은 감자 — 겨울에 하얼빈을 방문하는 남부 중국 관광객을 애정을 담아 부르는 표현.",
+      "fr": "Petite pomme de terre — terme affectueux pour les touristes du sud de la Chine visitant Harbin en hiver."
+    },
+    "source": "classic",
+    "date": "2024-06-20",
+    "is_trending": false
+  },
+  {
+    "id": 15,
+    "chinese": "泼天富贵",
+    "pinyin": "pō tiān fù guì",
+    "explanations": {
+      "en": "Overwhelming Fortune — literally 'splashing sky fortune'. Used to describe an unexpectedly huge windfall, lucky break, or viral success.",
+      "ja": "降って湧いた大金 — 文字通り「天から降る富」。予想外の大金や幸運、バイラルヒットを指す。",
+      "ko": "엄청난 행운 — 문자 그대로 '하늘에서 쏟아지는 부'. 예상치 못한 큰 돈이나 행운, 바이럴 성공을 표현.",
+      "fr": "Fortune débordante — littéralement 'fortune qui éclabousse le ciel'. Décrit un coup de chance inattendu ou un succès viral."
+    },
+    "source": "weibo",
+    "date": "2025-12-15",
+    "is_trending": false
+  },
+  {
+    "id": 100,
+    "chinese": "泰酷辣",
+    "pinyin": "tài kù là",
+    "explanations": {
+      "en": "Too Cool, Man — a funny mispronunciation of '太酷了' (tài kù le) made by a contestant on a Chinese variety show. Went viral for its awkward delivery.",
+      "ja": "超かっこいい — 中国のバラエティ番組出演者の珍発音から生まれた流行語。気まずい言い回しで話題に。",
+      "ko": "너무 쿨하다 — 중국 예능 출연자의 재미있는 발음 실수에서 유래. 어색한 말투로 화제가 됨.",
+      "fr": "Trop cool, mec — une prononciation tordue de '太酷了' par un candidat d'une émission chinoise. Devenue virale."
+    },
+    "source": "weibo",
+    "date": "2026-05-16",
+    "is_trending": true
+  },
+  {
+    "id": 101,
+    "chinese": "脆皮大学生",
+    "pinyin": "cuì pí dà xué shēng",
+    "explanations": {
+      "en": "Crispy College Students — a humorous term for Gen Z university students who are physically fragile and get injured doing mundane things.",
+      "ja": "脆い大学生 — 日常的なことで簡単にケガをするZ世代の大学生を茶化した言葉。",
+      "ko": "바삭한 대학생 — 평범한 일상 활동에도 쉽게 다치는 Z세대 대학생을 놀리는 유행어.",
+      "fr": "Étudiants croustillants — terme humoristique pour les étudiants de la génération Z qui se blessent en faisant des choses banales."
+    },
+    "source": "weibo",
+    "date": "2026-05-16",
+    "is_trending": true
+  },
+  {
+    "id": 102,
+    "chinese": "遥遥领先",
+    "pinyin": "yáo yáo lǐng xiān",
+    "explanations": {
+      "en": "Far Ahead — a popular slogan from Huawei's product launch events. Became a meme used to hype anything from tech to everyday wins.",
+      "ja": "大きくリード — ファーウェイの製品発表会での決め台詞。テクノロジーから日常の出来事まで何にでも使われるミーム。",
+      "ko": "압도적 선두 — 화웨이 제품 발표회의 유행어. 기술부터 일상까지 모든 것을 띄우는 밈으로 사용.",
+      "fr": "Largement en tête — slogan des lancements Huawei. Devenu un mème pour célébrer n'importe quelle réussite."
+    },
+    "source": "weibo",
+    "date": "2026-05-16",
+    "is_trending": true
+  },
+  {
+    "id": 103,
+    "chinese": "情绪价值",
+    "pinyin": "qíng xù jià zhí",
+    "explanations": {
+      "en": "Emotional Value — a buzzword describing the emotional benefit someone brings to a relationship. High 'emotional value' means they make you feel good.",
+      "ja": "感情的価値 — 人間関係において相手がもたらす感情的なメリットを指す流行語。",
+      "ko": "감정적 가치 — 인간관계에서 상대방이 주는 정서적 혜택을 나타내는 유행어.",
+      "fr": "Valeur émotionnelle — désigne le bénéfice émotionnel qu'une personne apporte dans une relation."
+    },
+    "source": "baidu",
+    "date": "2026-05-16",
+    "is_trending": true
+  },
+  {
+    "id": 104,
+    "chinese": "科目三",
+    "pinyin": "kē mù sān",
+    "explanations": {
+      "en": "Subject 3 — originally a driving test subject. Became a viral dance trend on Douyin (TikTok China) featuring a specific set of body-wave moves.",
+      "ja": "教科書3 — 元は運転免許の技能試験。中国版TikTokで特定の波打つようなダンスがバイラルに。",
+      "ko": "과목 3 — 원래 운전면허 시험 과목. 중국 틱톡( Douyin)에서 특정 웨이브 댄스가 바이럴 되면서 유행.",
+      "fr": "Leçon 3 — à l'origine une épreuve du permis de conduire. Devenue une danse virale sur Douyin (TikTok chinois)."
+    },
+    "source": "douyin",
+    "date": "2026-05-16",
+    "is_trending": true
+  }
+]
