@@ -8,6 +8,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 jobs:
   scrape-and-update:
@@ -31,6 +32,8 @@ jobs:
           pip install requests beautifulsoup4
 
       - name: Run meme scraper
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scripts/scrape_memes.py
 
       - name: Check for changes
